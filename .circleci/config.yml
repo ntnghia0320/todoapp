@@ -35,7 +35,7 @@ jobs:
           path: target/site/jacoco/index.html
 
       # run tests! and gen code coverage
-      - run: mvn integration-test cobertura:cobertura
+      - run: mvn test
 
       - store_test_results:
           path: target/surfire-reports
